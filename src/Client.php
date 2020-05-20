@@ -345,6 +345,15 @@ class Client
     }
 
     /**
+     * @param int     $id     ID transakce
+     * @return array|\stdClass|string
+     */
+    public function deleteTransaction($id){
+        $url = $this->joinString('tracker/transaction/', $id, '/delete');
+        return $this->delete($url);
+    }
+
+    /**
      * @param string $transaction_id ID transakce
      * @param array $data Data
      * @return array|\stdClass|string
