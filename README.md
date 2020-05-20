@@ -1,7 +1,13 @@
 # PHP wrapper pro práci s Ecomail.cz API
 
-[![Build Status](https://travis-ci.org/Ecomailcz/ecomail-php.svg?branch=master)](https://travis-ci.org/Ecomailcz/ecomail-php)
-[![Downloads this Month](https://img.shields.io/packagist/dm/ecomailcz/ecomail.svg)](https://packagist.org/packages/ecomailcz/ecomail)
+V tomto forku je navíc následující:
+- klient vyhazuje vyjímky:
+    - InvalidApiKeyException
+    - RequestsLimitExceededException
+    - InvalidResponseCodeException
+    - InvalidResponseFormatException
+- třída Ecomail přejmenována na Ecomail\Client (zpětně kompatibilní třída v globálním namespacu stále existuje)
+- možnost předat do klienta callback, který může donastavit curl resource
 
 # Instalace
 

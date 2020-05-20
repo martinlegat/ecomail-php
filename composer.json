@@ -1,5 +1,5 @@
 {
-  "name": "ecomailcz/ecomail",
+  "name": "martinlegat/ecomail",
   "description": "Ecomail.cz API Wrapper",
   "license": "GNU GPL 3",
   "keywords": ["API", "Wrapper", "Ecomail", "Newsletter", "Email", "Marketing"],
@@ -10,10 +10,15 @@
       "email": "mail@filipsedivy.cz",
       "homepage": "https://filipsedivy.cz",
       "role": "Developer"
+    },
+    {
+      "name": "Martin Legát",
+      "homepage": "https://github.com/martinlegat/",
+      "role": "Developer"
     }
   ],
   "require": {
-    "php": ">=5.3.2",
+    "php": ">=7.3.0",
     "ext-curl": "*",
     "ext-json": "*"
   },
