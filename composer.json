@@ -1,7 +1,7 @@
 {
   "name": "martinlegat/ecomail",
   "description": "Ecomail.cz API Wrapper",
-  "license": " GPL-3.0-or-later",
+  "license": "GPL-3.0-or-later",
   "keywords": ["API", "Wrapper", "Ecomail", "Newsletter", "Email", "Marketing"],
   "type": "library",
   "authors": [
