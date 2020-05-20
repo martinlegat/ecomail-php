@@ -475,7 +475,8 @@ class Client
         $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
         $curl_errno = curl_errno($ch);
-        if($curl_errno !== 0 || $http_code < 200 || $http_code >= 300) {
+        if($curl_errno !== 0 || $http_code < 200 || $http_code >= 300)
+        {
             if($http_code === 429)
             {
                 throw new RequestsLimitExceededException();
@@ -489,7 +490,8 @@ class Client
             throw new InvalidResponseCodeException(
                 $error_message,
                 $curl_errno,
-                is_int($http_code) ? $http_code : null
+                is_int($http_code) ? $http_code : null,
+                json_decode($output, true)
             );
         }
 
