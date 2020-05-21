@@ -12,7 +12,7 @@ V tomto forku je navíc následující:
 # Instalace
 
 ```
-composer require ecomailcz/ecomail
+composer require martinlegat/ecomail
 ```
 
 # Použití
