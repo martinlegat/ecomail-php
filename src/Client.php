@@ -104,10 +104,11 @@ class Client
 
     /**
      * @param string $list_id ID listu
+     * @param int|null $page
      * @return array|\stdClass|string
      */
-    public function getSubscribers($list_id){
-        $url = $this->joinString('lists/', $list_id, '/subscribers');
+    public function getSubscribers($list_id, ?int $page = null){
+        $url = $this->joinString('lists/', $list_id, '/subscribers', $page !== null ? '?page='.$page : '');
         return $this->get($url);
     }
 
